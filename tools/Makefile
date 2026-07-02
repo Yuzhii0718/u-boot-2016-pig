@@ -98,6 +98,7 @@ dumpimage-mkimage-objs := aisimage.o \
 			$(ROCKCHIP_OBS) \
 			socfpgaimage.o \
 			sysupgrade.o \
+			strlwrap.o \
 			lib/sha1.o \
 			lib/sha256.o \
 			common/hash.o \
