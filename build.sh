@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# Set cross-compile toolchain path (one level up from staging_dir)
+# Use system toolchain
 export ARCH=arm
-export PATH=$(realpath .)/../staging_dir/toolchain-arm_cortex-a7_gcc-5.2.0_musl-1.1.16_eabi/bin:$PATH
-#export PATH=$(realpath .)/../openwrt-sdk-ipq807x-2102/staging_dir/toolchain-arm_cortex-a7_gcc-5.5.0_musl_eabi/bin:$PATH
-export CROSS_COMPILE=arm-openwrt-linux-
-export STAGING_DIR=$(realpath .)/../staging_dir/
-export HOSTLDFLAGS=-L$STAGING_DIR/usr/lib\ -znow\ -zrelro\ -pie
-export TARGETCC=arm-openwrt-linux-gcc
+export CROSS_COMPILE=arm-linux-gnueabi-
+export KCFLAGS=-Wno-address-of-packed-member
 
 # Function to detect and select appropriate Python version
 detect_python() {
