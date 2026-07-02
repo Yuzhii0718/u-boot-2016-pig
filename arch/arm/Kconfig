@@ -435,6 +435,7 @@ config ARCH_IPQ40xx
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_IPQ806x
@@ -443,6 +444,7 @@ config ARCH_IPQ806x
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_IPQ807x
@@ -451,6 +453,7 @@ config ARCH_IPQ807x
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_IPQ5018
@@ -459,6 +462,7 @@ config ARCH_IPQ5018
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_IPQ5332
@@ -467,6 +471,7 @@ config ARCH_IPQ5332
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_IPQ6018
@@ -475,6 +480,7 @@ config ARCH_IPQ6018
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_IPQ9574
@@ -483,6 +489,7 @@ config ARCH_IPQ9574
 	select DM_SERIAL
 	select CPU_V7
 	select SYS_GENERIC_BOARD
+	select SYS_THUMB_BUILD
 	select QCA_COMMON
 
 config ARCH_S5PC1XX
