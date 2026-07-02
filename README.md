@@ -32,7 +32,7 @@
 
 ```bash
 sudo apt-get update
-sudo apt-get install -y build-essential libncurses5-dev gawk git gettext libssl-dev python3 wget cpio flex bison bc rsync nodejs npm gzip zopfli device-tree-compiler
+sudo apt-get install -y build-essential libncurses5-dev gawk git gettext libssl-dev python3 wget cpio flex bison bc rsync nodejs npm gzip zopfli device-tree-compiler gcc-arm-linux-gnueabi libbsd-dev
 ```
 
 makefsdatac脚本处理Web界面文件，需要用的Node.js工具，以及该工具的以下组件：
@@ -45,7 +45,6 @@ npm install -g html-minifier-terser clean-css terser
 
 ```bash
 git clone https://github.com/1980490718/u-boot-2016.git
-git clone https://github.com/1980490718/toolchain-arm_cortex-a7_gcc-5.2.0.git staging_dir
 cd u-boot-2016
 ./build.sh clean
 ```
