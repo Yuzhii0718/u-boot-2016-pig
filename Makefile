@@ -1289,7 +1289,7 @@ $(u-boot-dirs): prepare scripts
 	$(Q)$(MAKE) $(build)=$@
 
 ifneq ($(CONFIG_COMPRESSED_DTB_BASE),)
-$(compressed_dtb-dirs): prepare scripts
+$(compressed_dtb-dirs): dtb_combined.bin prepare scripts
 	$(Q)$(MAKE) $(build)=$@
 endif
 
