@@ -340,7 +340,7 @@ static int httpd_check_upload_complete(void) {
 
 static void httpd_handle_upgrade_status(void) {
 	static const char *status_text[] = {"idle", "verifying", "flashing", "type_mismatch", "rebooting"};
-	char resp[128];
+	static char resp[128];
 	int len = sprintf(resp, "HTTP/1.0 200 OK\r\nServer: uIP/0.9\r\nCache-Control: no-cache\r\nContent-Type: text/plain\r\nConnection: close\r\n\r\n%s", status_text[upgrade_status]);
 	hs->state = STATE_FILE_REQUEST;
 	hs->dataptr = (u8_t *)resp;

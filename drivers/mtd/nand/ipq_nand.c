@@ -1639,7 +1639,7 @@ static const struct nand_flash_dev *flash_get_dev(uint8_t dev_id)
 {
 	int i;
 
-	for (i = 0; nand_flash_ids[i].id; i++) {
+	for (i = 0; nand_flash_ids[i].name != NULL; i++) {
 		if (nand_flash_ids[i].dev_id == dev_id)
 			return &nand_flash_ids[i];
 	}

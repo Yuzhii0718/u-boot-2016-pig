@@ -1152,10 +1152,11 @@ rootdir_done:
 
 	firsttime = 1;
 
+	dir_entry dent;
+
 	while (isdir) {
 		int startsect = mydata->data_begin
 			+ START(dentptr) * mydata->clust_size;
-		dir_entry dent;
 		char *nextname = NULL;
 
 		dent = *dentptr;

@@ -778,8 +778,8 @@ struct qca8084_pinctrl_setting {
 int qca8084_gpio_set_bit( u32 pin, u32 value);
 int qca8084_gpio_get_bit( u32 pin, u32 *data);
 int qca8084_gpio_pin_mux_set( u32 pin, u32 func);
-int qca8084_gpio_pin_cfg_set_bias( u32 pin, u32 bias);
-int qca8084_gpio_pin_cfg_get_bias( u32 pin, u32 *bias);
+int qca8084_gpio_pin_cfg_set_bias( u32 pin, enum qca8084_pin_config_param bias);
+int qca8084_gpio_pin_cfg_get_bias( u32 pin, enum qca8084_pin_config_param *bias);
 int qca8084_gpio_pin_cfg_set_drvs( u32 pin, u32 drvs);
 int qca8084_gpio_pin_cfg_get_drvs( u32 pin, u32 *drvs);
 int qca8084_gpio_pin_cfg_set_oe( u32 pin, bool oe);
