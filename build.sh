@@ -3,7 +3,8 @@
 # Use system toolchain
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabi-
-export KCFLAGS=-Wno-address-of-packed-member
+export KCFLAGS=-Wno-address-of-packed-member -Wa,--noexecstack
+export LDFLAGS=-Wl,--no-warn-rwx-segments
 
 # Function to detect and select appropriate Python version
 detect_python() {
